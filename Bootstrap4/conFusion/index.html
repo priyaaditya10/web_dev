@@ -34,7 +34,7 @@
                             Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="login-button">
                         <span class="fa fa-sign-in">
                             Login
                         </span>
@@ -45,12 +45,12 @@
 
     </nav>
 
-    <div id="loginModal" class="modal fade" role="dialog">
+    <div id="login-modal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login</h4>
-                    <button type="button" class="close" data-dismiss="modal">
+                    <button type="button" class="close" id="login-cancel">
                         &times;
                     </button>
 
@@ -102,8 +102,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a type="button" class="btn btn-block btn-sm bg-warning " data-toggle="modal"
-                        data-target="#card_temp" style="color: black;">
+                    <a type="button" class="btn btn-block btn-sm bg-warning " id="reserve-button" style="color: black;">
                         Reserve Table
                     </a>
                 </div>
@@ -243,12 +242,12 @@
     </div>
 
 
-    <div id="card_temp" class="modal fade" role="dialog">
+    <div id="reserve-modal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Reserve a Table</h4>
-                    <button type="button" class="close" data-dismiss="modal">
+                    <button type="button" class="close" id="reserve-cancel">
                         &times;
                     </button>
 
@@ -404,6 +403,25 @@
                 }
             });
         });
+        /* invoking reserve table modal through script*/
+        $(document).ready(function () {
+            $("#reserve-button").click(function () {
+                $("#reserve-modal").modal('show');
+            });
+            $("#reserve-cancel").click(function () {
+                $("#reserve-modal").modal('hide');
+            });
+        });
+/* invoking login modal through script */$
+    $(document).ready(function () {
+        $("#login-button").click(function () {
+            $("#login-modal").modal('show');
+        });
+        $("#login-cancel").click(function () {
+            $("#login-modal").modal('hide');
+        });
+    });
+
     </script>
 
 </body>
