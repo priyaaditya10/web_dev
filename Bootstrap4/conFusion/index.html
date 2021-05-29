@@ -164,6 +164,14 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -184,14 +192,14 @@
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola
                             olives,
                             ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-    
+
                     </div>
                 </div>
-    
+
             </div>
         </div>
-    
-    
+
+
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
@@ -207,11 +215,11 @@
                             $19.99 per person </p>
                     </div>
                     <img class="d-flex  mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
-    
+
                 </div>
             </div>
         </div>
-    
+
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
@@ -227,10 +235,10 @@
                             closely with whos-who in the culinary world, she specializes in creating mouthwatering
                             Indo-Italian fusion
                             experiences. </p>
-    
+
                     </div>
                 </div>
-    
+
             </div>
         </div>
 
@@ -290,7 +298,8 @@
                             <label for="section" class="col-sm-2 col-form-label"><strong>Section</strong></label>
                             <div class="col-md-6 btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-success active">
-                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                    Non-Smoking
                                 </label>
                                 <label class="btn btn-danger">
                                     <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
@@ -380,6 +389,18 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $("#mycarousel").carousel({ interval: 2000 });
+                $("#carousel-pause").click(function () {
+                    $("#mycarousel").carousel('pause');
+                });
+                $("#carousel-play").click(function () {
+                    $("#mycarousel").carousel('cycle');
+                });
+            });
+        </script>
 
 </body>
 

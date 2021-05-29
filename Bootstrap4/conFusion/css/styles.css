@@ -70,3 +70,10 @@ body
     bottom: auto;
     margin-left: 200px;
 }
+
+#carouselButton
+{
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+}
