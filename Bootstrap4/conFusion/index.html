@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <title>Ristorante Con Fusion</title>
+    <title>Indian Masala</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/masala.png" height="30" width="41"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home"></span> Home</a>
@@ -90,24 +90,27 @@
 
     </div>
 
-    <header class="jumbotron">
+    <header class="jumbotron background">
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
+                    <h1>Indian Masala</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-3 align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
                 </div>
-                <div class="col-12 col-sm-3 align-self-center">
+               <!-- <div class="col-12 col-sm-3 align-self-center">
+                    <img src="img/back.jpg" class="img-fluid">
+                </div>-->
+                <div class="row row-header">
+                <div class="col-6 col-sm-3 align-self-center">
                     <a type="button" class="btn btn-block btn-sm bg-warning " id="reserve-button" style="color: black;">
                         Reserve Table
                     </a>
                 </div>
+                </div>
 
-            </div>
+            
         </div>
     </header>
 
@@ -350,9 +353,9 @@
                 <div class="col-7 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
-                        121, Clear Water Bay Road<br>
-                        Clear Water Bay, Kowloon<br>
-                        HONG KONG<br>
+                        123, Fifth Avenue<br>
+                        West Village, Los Angeles<br>
+                        CALIFORNIA<br>
                         <i class="fa fa-phone fa-lg"></i> +852 1234 5678<br>
                         <i class="fa fa-fax fa-lg"></i> +852 8765 4321<br>
                         <i class="fa fa-envelope fa-lg"></i> <a href="mailto:confusion@food.net">confusion@food.net</a>
@@ -376,7 +379,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                    <p>© Copyright 2021 Indian Masala</p>
                 </div>
             </div>
         </div>
@@ -386,43 +389,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $("#mycarousel").carousel({ interval: 2000 });
-            $("#carouselButton").click(function () {
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')) {
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');
-                }
-            });
-        });
-        /* invoking reserve table modal through script*/
-        $(document).ready(function () {
-            $("#reserve-button").click(function () {
-                $("#reserve-modal").modal('show');
-            });
-            $("#reserve-cancel").click(function () {
-                $("#reserve-modal").modal('hide');
-            });
-        });
-/* invoking login modal through script */$
-    $(document).ready(function () {
-        $("#login-button").click(function () {
-            $("#login-modal").modal('show');
-        });
-        $("#login-cancel").click(function () {
-            $("#login-modal").modal('hide');
-        });
-    });
-
-    </script>
+    <script src="js/scripts.js"></script>
 
 </body>
 

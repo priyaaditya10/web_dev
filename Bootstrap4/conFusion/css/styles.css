@@ -9,15 +9,30 @@
   min-height: 400px; }
 
 .footer {
-  background-color: #D1C4E9;
+  background-color: #adb5bd;
   margin: 0px auto;
   padding: 20px 0px; }
 
 .jumbotron {
   margin: 0px auto;
   padding: 70px 30px;
-  background: #9575CD;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  
+  background: #A876D8;
   color: floralwhite; }
+
+  .background
+  {
+  background-image: url("https://www.printawallpaper.com/wp-content/uploads/2020/07/spicy_affair_d.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
 
 address {
   font-size: 80%;
@@ -29,7 +44,8 @@ body {
   z-index: 0; }
 
 .navbar-dark {
-  background-color: #512DA8; }
+  background-color: #000000; 
+  opacity: 98%; }
 
 .tab-content {
   border-left: 1px solid #ddd;
@@ -38,7 +54,7 @@ body {
   padding: 10px; }
 
 .carousel {
-  background: #512DA8; }
+  background: #0f0f0f; }
   .carousel .carousel-item {
     height: 300px; }
     .carousel .carousel-item img {
@@ -48,17 +64,24 @@ body {
       min-height: 300px; }
 
 .modal-header {
-  background-color: #512DA8; }
+  background-color: #495057; }
   .modal-header .modal-title {
     color: floralwhite; }
   .modal-header .close {
     color: floralwhite; }
 
 .modal-body {
-  background-color: #D1C4E9; }
+  background-color: #ced4da; }
 
 #carouselButton {
   right: 0px;
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+  .carousel-caption {
+    top: 0;
+    bottom: auto;
+    margin-left: 200px;
+}
+ 
