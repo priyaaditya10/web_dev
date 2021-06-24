@@ -28,10 +28,20 @@
 
   .background
   {
-  background-image: url("https://www.printawallpaper.com/wp-content/uploads/2020/07/spicy_affair_d.jpg");
+  background-image: url("../img/jumbo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  }
+  .img-alter
+  {
+    height: 250px;
+    width: 250 px;
+  }
+  .img-alter1
+  {
+    height: 250px;
+    width: 300px;
   }
 
 address {
@@ -85,3 +95,8 @@ body {
     margin-left: 200px;
 }
  
+.card-img-alter
+{
+  height: 250px;
+  width: auto;
+}
